@@ -7,6 +7,10 @@ let msg = document.querySelector(".msg");
 let turnO = true;
 let count  = 0;
 
+let scoreO = 0;
+let scoreX = 0;
+
+
 const winPattern = [
     [0,1,2],
     [3,4,5],
@@ -20,12 +24,6 @@ const winPattern = [
 
 boxes.forEach ((box ) => {
     box.addEventListener("click", () =>{
-<<<<<<< HEAD
-      
-
-=======
-        
->>>>>>> dd6e3d9 (updated)
         if(turnO){
             box.innerText = "O";
             turnO = false;
@@ -52,14 +50,7 @@ const gameDraw = () =>{
     msg.innerText = "Game is Draw";
     msgContainer.classList.remove("hide");
     disableBoxes();
-<<<<<<< HEAD
-
-
 }
-=======
-}
-
->>>>>>> dd6e3d9 (updated)
 const  enableBoxes = () => {
     for (let box of boxes ){
         box.disabled = false;
@@ -79,6 +70,13 @@ const showWinner = (winner) => {
     msg.innerText = `Congratulation, Winner is ${winner}`;
     msgContainer.classList.remove("hide");
     disableBoxes();
+    if (winner === 'O') {
+        scoreO++;
+        document.getElementById('score-o').innerText = `Player O: ${scoreO}`;
+    } else {
+        scoreX++;
+        document.getElementById('score-x').innerText = `Player X: ${scoreX}`;
+    }
 
 };
 const checkWinner = () =>{

@@ -91,3 +91,13 @@ body{
     display: none;
 }
 
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#score-o, #score-x {
+    font-size: 20px;
+    color: #333;
+}
