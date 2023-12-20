@@ -95,9 +95,28 @@ body{
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
+
 }
 
 #score-o, #score-x {
-    font-size: 20px;
+    font-size: 26px;
     color: #333;
+    text-align: center;
+    background-color: bisque;
+    overflow: cover;
+    height: 29px;
+    width: 130px;
+    border-radius: 8px;
+    border: none;
+    margin: 2px;
+    padding: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+ 
+
+h1, .game_name {
+    text-shadow: 2px 2px 4px #000000;   
 }
