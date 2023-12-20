@@ -119,5 +119,6 @@ body{
  
 
 h1, .game_name {
-    text-shadow: 2px 2px 4px #000000;   
+    /* text-shadow: 2px 2px 4px #000000;    */
+    text-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
 }
